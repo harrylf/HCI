@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width,intial-scale=1, shrink-to-fit=no"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        <title>College Cuisine</title>
+        
+    </head>    
+    
+    <body> 
+        <div class="container">
+            <div class = "row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h1><span style="color: navy">College Cuisine</span></h1>
+                    </div>                
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="container">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item "><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link " href="meals.html">Meals</a></li>
+                            <li class="nav-item"><a class="nav-link " href="grabgo.html">Grab and Go</a></li>
+                            <li class="nav-item"><a class="nav-link " href="tips.html">Tips and Tricks</a></li>
+                        </ul>              
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9 col-xs-12">    
+                    <br>
+                    <div align = "right">
+                        <strong>Music Track:</strong>
+                       <audio id="myAudio"
+                        <source src="Chinese Traditional Song.mp3"
+                             type='audio/ogg; codecs=vorbis'>
+                        Your user agent does not support the HTML5 Audio element.
+                        </audio>
+                        <button type="button" onclick="aud_play_pause()">Play/Pause</button>
+                        <script>
+                        function aud_play_pause() 
+                        {
+                            var myAudio = document.getElementById("myAudio");
+                            if (myAudio.paused) 
+                            {
+                                myAudio.play();
+                            } 
+                            else 
+                            {
+                                myAudio.pause();
+                            }
+                        }
+                    </script>
+                    </div>
+                    <h3>Sesame Soy Salmon</h3>
+                    <p>Time: 25 minuntes</p>
+                    <p>Tools needed: Pot, baking sheet, parchment paper, glazing brush.</p>
+                    <p>Ingredients:</p>
+                        <ul>
+                            <li>Salmon fillets</li>
+                            <li>1/4 cup sweet and sour sauce</li>
+                            <li>1/8 cup soy sauce</li>
+                            <li>Sesame seeds</li>
+                            <li>All spice</li>
+                            <li>Cinnamon</li>
+                            <li>Chili powder</li>
+                            <li>Paprika</li>
+                        </ul>
+                    <p>Procedure:</p>
+                        <p>Salmon</p>
+                        <ol>
+                            <li>Lay salmon on plate and season sides with all spice, cinnamon, chili powder, and paprika</li>
+                            <li>To prevent salmon from getting dry, run paper towel under luke warm water and wring out. Gently lay damp paper towel on salmon and remove.</li>
+                            <li>Bake salmon at 400 F on parchment lined baking sheet for 17 minutes</li>
+                            <li>Glaze salmon with sesame sauce</li>
+                        </ol>
+                        <p>Sesame Sauce</p>
+                        <ol>
+                            <li>Place sweet and sour sauce, soy sauce, and sesame seed in pot</li>
+                            <li>Gently heat on lowest heat and stir until combined</li>
+                        </ol>
+                    
+                    <p>Recommended side: Udon</p> 
+                    
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="card text-center">
+                        <h4 class="card-header">You may also like</h4>
+                        <a href = "recipe.html" class="card-link"> Maple Syrup Salmon </a>                                
+                        <a href = "recipe.html" class="card-link"> Cucumber Salad </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class = "card text-center"></div>
+                    <p>Explore your pallette, your kitchen, and this website!
+                    <!--a href="https://media.tenor.com/images/385ec966abc6c63961163a35f2d40450/tenor.gif">How I feel about the rest of my classes</a-->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
