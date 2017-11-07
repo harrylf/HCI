@@ -11,8 +11,6 @@
     </head>    
     
     <body> 
-
-        
         <div class="container">
             <div class = "row">
                 <div class="col-xs-12">
@@ -27,21 +25,23 @@
                     <div class="container">
                         <ul class="nav nav-pills">
                             <li class="nav-item "><a class="nav-link active" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link " href="meals.html">Meals</a></li>
-                            <li class="nav-item"><a class="nav-link " href="grabgo.html">Grab and Go</a></li>
-                            <li class="nav-item"><a class="nav-link " href="tips.html">Tips and Tricks</a></li>
+                            <li class="nav-item"><a class="nav-link " href="meals-nav.html"\>Meals</a></li>
+                            <li class="nav-item"><a class="nav-link " href="grabgo-nav.html">Grab and Go</a></li>
+                            <li class="nav-item"><a class="nav-link " href="tips-nav.html">Tips and Tricks</a></li>
                             <form><input id="search-bar" name="search" type="text" placeholder="Search...">
-                                <input id="search-button" name="search_submit" type="submit" value="Search!"></form>
+                            <input id="search-button" name="search_submit" type="submit" value="Search"></form>
+                            <a href = account.html><img src = https://d30y9cdsu7xlg0.cloudfront.net/png/665180-200.png style="width:30px;height:40px;padding-left: 10px" ></a>
                         </ul>              
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-9 col-xs-12">
+                <div class="col-sm-9 col-xs-12">    
+                    <br>
                     <div align = "right">
                         <strong>Music Track:</strong>
                        <audio id="myAudio"
-                        <source src="Free Background Music For Cooking 16 minutes.mp3"
+                        <source src="Chinese Traditional Song.mp3"
                              type='audio/ogg; codecs=vorbis'>
                         Your user agent does not support the HTML5 Audio element.
                         </audio>
@@ -59,61 +59,47 @@
                                 myAudio.pause();
                             }
                         }
-                        </script>
+                    </script>
+                                        <br>
+                    <img src = http://cdn.sheknows.com/fabulousfoods/recipes/recipes/1222405934_sesame_salmon_ginger.jpg style="width:300px;height:200px;" align = "right" vspace="10">
                     </div>
-            
-                    <br>
-                    <h3>Lemon Herbed Chicken</h3>
+
+                    <h3>Sesame Soy Salmon</h3>
                     <p>Time: 25 minuntes</p>
-                    <p>Tools needed: Pan, knife, baking sheet.</p>
+                    <p>Tools needed: Pot, baking sheet, parchment paper, glazing brush.</p>
                     <p>Ingredients:</p>
                         <ul>
-                            <li>2 Chicken Breasts</li>
-                            <li>Lemon</li>
-                            <li>Garlic</li>
-                            <li>Olive Oil</li>
+                            <li>Salmon fillets</li>
+                            <li>1/4 cup sweet and sour sauce</li>
+                            <li>1/8 cup soy sauce</li>
+                            <li>Sesame seeds</li>
                             <li>All spice</li>
-                            <li>Basil</li>
-                            <li>Garic powder</li>
-                            <li>Lemon pepper</li>
+                            <li>Cinnamon</li>
+                            <li>Chili powder</li>
+                            <li>Paprika</li>
                         </ul>
                     <p>Procedure:</p>
+                        <p>Salmon</p>
                         <ol>
-                            <li>Lay chicken on plate and season both sides with all spice, basil, garlic powder, and lemon pepper</li>
-                            <li>Cut lemon in half. Squeeze juice from one half on chicken</li>
-                            <li>Warm up olive oil in pan, place garlic cloves in oil. Infuse juice of other half of lemon into oil</li>
-                            <li>Sear chicken 2 minutes each side or until a layer of white about 1/8 inch forms</li>
-                            <li>Place chicken on baking sheet and squeeze remaining lemon juice and place lemon halves on sheet</li>
-                            <li>Bake chicken in oven at 350 F for 18 minutes or until white throughout</li>
+                            <li>Lay salmon on plate and season sides with all spice, cinnamon, chili powder, and paprika</li>
+                            <li>To prevent salmon from getting dry, run paper towel under luke warm water and wring out. Gently lay damp paper towel on salmon and remove.</li>
+                            <li>Bake salmon at 400 F on parchment lined baking sheet for 17 minutes</li>
+                            <li>Glaze salmon with sesame sauce</li>
+                        </ol>
+                        <p>Sesame Sauce</p>
+                        <ol>
+                            <li>Place sweet and sour sauce, soy sauce, and sesame seed in pot</li>
+                            <li>Gently heat on lowest heat and stir until combined</li>
                         </ol>
                     
-                    <p>Recommended side: Pasta</p> 
-
-                   
-                    <p>On a scale of 1 to 5, how successful were you?</p>
-                    <input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)" />
-                    <span id="range">1</span>
-                    <script type="text/javascript">
-                    function showValue(newValue)
-                    {
-                        document.getElementById("range").innerHTML=newValue;
-                       
-                        if(document.getElementById("range").innerHTML==4) {
-                            window.alert("You earned 1 point");
-                        }
-                        else if(document.getElementById("range").innerHTML==5) {
-                            window.alert("You earned 2 points");
-                        }
-                    }
-                    </script>
-                   
+                    <p>Recommended side: Udon</p> 
                     
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <div class="card text-center">
                         <h4 class="card-header">You may also like</h4>
-                        <a href = "recipe2.html" class="card-link"> Maple Syrup Salmon </a>                                
-                        <a href = "recipe.html" class="card-link"> Cucumber Salad </a>
+                        <a href = "lemonchicken.html" class="card-link">Lemon Herbed Chciekn</a>                                
+                        <a href = "israelisalad.html" class="card-link"> Israeli Salad </a>
                     </div>
                 </div>
             </div>
@@ -125,6 +111,9 @@
                     <!--a href="https://media.tenor.com/images/385ec966abc6c63961163a35f2d40450/tenor.gif">How I feel about the rest of my classes</a-->
                 </div>
             </div>
-        </div>
     </body>
 </html>
+
+
+
+
