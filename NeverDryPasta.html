@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width,intial-scale=1, shrink-to-fit=no"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        <title>College Cuisine</title>
+        
+    </head>    
+    
+    <body> 
+
+        
+        <div class="container">
+            <div class = "row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h1><span style="color: navy">College Cuisine</span></h1>
+                    </div>                
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="container">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item "><a class="nav-link " href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link " href="meals-nav.html">Meals</a></li>
+                            <li class="nav-item"><a class="nav-link " href="grabgo-nav.html">Grab and Go</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="tips-nav.html">Tips and Tricks</a></li>
+                            <form><input id="search-bar" name="search" type="text" placeholder="Search...">
+                            <input id="search-button" name="search_submit" type="submit" value="Search"></form>
+                            <a href = account.html><img src = https://d30y9cdsu7xlg0.cloudfront.net/png/665180-200.png style="width:30px;height:30px;padding-left: 10px" ></a>
+                        </ul>              
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9 col-xs-12">
+                    <div align = "right">
+                        <br>
+                        <img src = https://previews.123rf.com/images/f8inth/f8inth1110/f8inth111000005/10977697-bow-pasta-in-strainer-Stock-Photo.jpg 
+                        style="width:300px;height:200px;" align = "right" vspace="10">
+                    </div>
+            
+                    <br>
+                    <h3>Never Dry Pasta</h3>
+                    <p>Tools needed: Measuring cup, strainer</p>
+                    <p>Ingredients:</p>
+                        <ul>
+                            <li>Boiled noodles</li>
+                            <li>Excess boiled water</li>
+                        </ul>
+                    <p>Procedure:</p>
+                        <ol>
+                            <li>Save 2-3 cups of the strained water after the noodles have boiled</li>
+                            <li>After the noodles have been strained, do not let them dry out!</li>
+                            <li>Ocassionally dump the excess boiled water over the strainer full of the noodles every 2-4 minutes before serving the meal</li>
+                        </ol>
+                    
+                    <p>The excess water is full of starch and pasta flavor post boil. Using this hot water will ensure the noodles fresh before serving the meal!</p> 
+
+                   
+                    <p>On a scale of 1 to 5, how successful were you?</p>
+                    <input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)" />
+                    <span id="range">1</span>
+                    <script type="text/javascript">
+                    function showValue(newValue)
+                    {
+                        document.getElementById("range").innerHTML=newValue;
+                       
+                        if(document.getElementById("range").innerHTML==4) {
+                            window.alert("You earned 1 point");
+                        }
+                        else if(document.getElementById("range").innerHTML==5) {
+                            window.alert("You earned 2 points");
+                        }
+                    }
+                    </script>
+                   
+                    
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="card text-center">
+                        <h5 class="card-header">Other Tips & Tools</h5>
+                        <a href = "LemonInfusion.html" class="card-link">Lemon Infusion</a>
+                        <a href = "SmashGarlic.html" class="card-link">Smash Garlic</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class = "card text-center"></div>
+                    <p>Explore your pallette, your kitchen, and this website!
+                    <!--a href="https://media.tenor.com/images/385ec966abc6c63961163a35f2d40450/tenor.gif">How I feel about the rest of my classes</a-->
+                </div>
+            </div>
+    </body>
+</html>
