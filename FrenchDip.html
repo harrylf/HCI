@@ -18,7 +18,7 @@
             <div class = "row">
                 <div class="col-xs-12">
                     <div class="page-header">
-                        <h1><span style="color: navy">College Cuisine</span></h1>
+                        <h1>College Cuisine</h1>
                     </div>                
                 </div>
             </div>
@@ -31,8 +31,8 @@
                             <li class="nav-item"><a class="nav-link " href="meals-nav.html">Meals</a></li>
                             <li class="nav-item"><a class="nav-link active" href="grabgo-nav.html">Quick Meals</a></li>
                             <li class="nav-item"><a class="nav-link " href="tips&tricks.html">Tips and Tricks</a></li>
-                            <form><input id="search-bar" name="search" type="text" placeholder="Search...">
-                            <input id="search-button" name="search_submit" type="submit" value="Search"></form>
+                            <a href = sesamesalmon.html> <form><input id="search-bar" name="search" type="text" placeholder="Search...">
+                                <input id="search-button" name="search_submit" type="submit" value="Search"></form></a>
                             <a href = account.html><img src = https://d30y9cdsu7xlg0.cloudfront.net/png/665180-200.png style="width:30px;height:40px;padding-left: 10px" ></a>
                         </ul>              
                     </div>
@@ -88,23 +88,22 @@
                     
                     <p>Recommended side: Smoothie</p>
 
-                   
                     <p>On a scale of 1 to 5, how successful were you?</p>
-                    <input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)" />
-                    <span id="range">1</span>
-                    <script type="text/javascript">
-                    function showValue(newValue)
-                    {
-                        document.getElementById("range").innerHTML=newValue;
-                       
-                        if(document.getElementById("range").innerHTML==4) {
+                    <p>4 earns you 1 point, 5 earns 2 points. (In development)</p>
+                    
+                    <script>
+                        if(satisfaction.value.toString() == "4")
                             window.alert("You earned 1 point");
-                        }
-                        else if(document.getElementById("range").innerHTML==5) {
+                        else if (satisfaction.value.toString() == "5")
                             window.alert("You earned 2 points");
-                        }
-                    }
                     </script>
+                    <form action="">
+                        <input type="radio" name="satisfaction" value="1" > 1
+                        <input type="radio" name="satisfaction" value="2"> 2
+                        <input type="radio" name="satisfaction" value="3"> 3
+                        <input type="radio" name="satisfaction" value="4" onclick="alert('You earned 1 point');"> 4
+                        <input type="radio" name="satisfaction" value="5" onclick="alert('You earned 2 points');"> 5
+                    </form>
                    
                     
                 </div>
